@@ -60,5 +60,11 @@ public class Variables {
         System.out.println(txt);
         System.out.println("The length of the txt string is: " + txt.length());
         System.out.println(txt.indexOf("O"));
+
+        // Concat
+        String firstName = "Omar";
+        String sureName = "bin";
+        String lasttName = "Ibrahim";
+        System.out.println(firstName + sureName + lasttName);
     }
 }
