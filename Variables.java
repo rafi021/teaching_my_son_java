@@ -6,25 +6,37 @@
  */
 
 /*
- Java Type Casting
-
-Type casting is when you assign a value of one primitive data type to another type.
-
-In Java, there are two types of casting:
-
-    Widening Casting (automatically) - converting a smaller type to a larger type size
-    byte -> short -> char -> int -> long -> float -> double
-
-    Narrowing Casting (manually) - converting a larger type to a smaller size type
-    double -> float -> long -> int -> char -> short -> byte 
+ Operator 	Name 	Description 	Example 
+    + 	Addition 	Adds together two values 	x + y 	
+    - 	Subtraction 	Subtracts one value from another 	x - y 	
+    * 	Multiplication 	Multiplies two values 	x * y 	
+    / 	Division 	Divides one value by another 	x / y 	
+    % 	Modulus 	Returns the division remainder 	x % y 	
+    ++ 	Increment 	Increases the value of a variable by 1 	++x 	
+    -- 	Decrement 	Decreases the value of a variable by 1 	--x
+    = 	x = 5 	x = 5 	
+    += 	x += 3 	x = x + 3 	
+    -= 	x -= 3 	x = x - 3 	
+    *= 	x *= 3 	x = x * 3 	
+    /= 	x /= 3 	x = x / 3 	
+    %= 	x %= 3 	x = x % 3 	
+    &= 	x &= 3 	x = x & 3 	
+    |= 	x |= 3 	x = x | 3 	
+    ^= 	x ^= 3 	x = x ^ 3 	
+    >>= 	x >>= 3 	x = x >> 3 	
+    <<= 	x <<= 3 	x = x << 3
  */
 public class Variables {
     public static void main(String[] args) {
         int myInt = 9;
-        double myDouble = myInt; // Automatic cast
-        int myNarrowInt = (int) myDouble; // Manual narrow casting
 
-        System.out.println(myDouble);
-        System.out.println(myNarrowInt);
+        System.out.println(myInt++);
+        System.out.println(--myInt);
+
+        System.out.println(++myInt);
+        System.out.println(myInt--);
+
+        System.out.println(myInt>>=3); // 10>>3() -->1
+        System.out.println(myInt<<=3); // 10<<3() -->100
     }
 }
